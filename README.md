@@ -232,6 +232,12 @@ public class GenerateTokenExample {
 </p>
 </details>
 
+## How to contribute to this extension
+
+This extension should provide all you need to interact with your Pusher Beams instance and use the Pusher Beam server SDK.
+
+But if you notice anything wrong, want to submit additional features or cover more things inside the existing features, please submit your remarks and/or PR.
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
