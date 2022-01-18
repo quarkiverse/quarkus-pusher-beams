@@ -25,6 +25,11 @@ It will do that until either the request could be successfully submitted, or ano
 
 To customize this retry behavior, please refers to the configuration section below.
 
+## Support
+
+* Pusher Beams server SDK version 1.1.1
+
+
 ## How to install
 
 The quarkus-pusher-beams jar is available in Maven Central.
@@ -48,6 +53,10 @@ The quarkus-pusher-beams jar is available in Maven Central.
 The extension is enabled by default as long as you include it into your dependencies.
 To disable it through configuration, please use the following property.
 
+**Optional**
+
+**Defaults to true**.
+    
 ```
 quarkus.pusher.beams.enabled=false
 ```
@@ -58,8 +67,10 @@ quarkus.pusher.beams.enabled=false
 <details><summary>Configure Pusher Beams instance ID</summary>
 <p>
 
-This is a mandatory property. Set the Pusher Beams instance ID to connect to.
+Set the Pusher Beams instance ID to connect to.
 
+**Required**
+    
 ```
 quarkus.pusher.beams.instance-id=8f9a6e22-2483-49aa-8552-125f1a4c5781
 ```
@@ -70,8 +81,10 @@ quarkus.pusher.beams.instance-id=8f9a6e22-2483-49aa-8552-125f1a4c5781
 <details><summary>Configure Pusher Beams instance secret key</summary>
 <p>
 
-This is a mandatory property. Set the Pusher Beams instance secret key to connect to.
+Set the Pusher Beams instance secret key to connect to.
 
+**Required**
+    
 ```
 quarkus.pusher.beams.secret-key=C54D42FB7CD2D408DDB22D7A0166F1D
 ```
