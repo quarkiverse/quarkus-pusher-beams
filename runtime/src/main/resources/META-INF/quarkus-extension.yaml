@@ -1,0 +1,10 @@
+name: Pusher Beams
+description: Enables you to interact with a Pusher Beams instance to send notifications
+metadata:
+  keywords:
+    - "pusher"
+    - "beams"
+    - "notification"
+  categories:
+    - "notification"
+  status: "experimental"
