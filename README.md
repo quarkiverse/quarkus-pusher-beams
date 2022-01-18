@@ -3,11 +3,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-This extension brings the [Pusher Push Notification Server java library](https://github.com/pusher/push-notifications-server-java) into the Quarkus ecosystem. 
+This extension brings the [Pusher Push Notification Server java library](https://github.com/pusher/push-notifications-server-java) into the Quarkus ecosystem and supports both JVM and Native modes.
 
-It offers an injectable proxy bean called BeamsClient that provide the same functionalities as the PushNotifications object provided by Pusher SDK.
-
-The extension also provide additional features like a prepared Java bean to publish notification (read the documentation below for restrictions) and an automated retry system in case of rate limitation rejections from Pusher.
 
 ## Features
 
