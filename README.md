@@ -39,7 +39,7 @@ The quarkus-pusher-beams jar is available in Maven Central.
     <dependency>
       <groupId>io.quarkiverse.pusher.beams</groupId>
       <artifactId>quarkus-pusher-beams</artifactId>
-      <version>[YOUR VERSION HERE]</version>
+      <version>1.0.1</version>
     </dependency>
 </dependencies>
 ```
