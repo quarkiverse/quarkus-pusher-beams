@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkiverse.pusher.beams</groupId>
     <artifactId>quarkus-pusher-beams-parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
   </parent>
   
   <artifactId>quarkus-pusher-beams-integration-tests</artifactId>
