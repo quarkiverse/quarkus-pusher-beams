@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
   <parent>
     <groupId>io.quarkiverse</groupId>
     <artifactId>quarkiverse-parent</artifactId>
     <version>9</version>
   </parent>
-  
   <groupId>io.quarkiverse.pusher.beams</groupId>
   <artifactId>quarkus-pusher-beams-parent</artifactId>
   <version>1.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Quarkus - Pusher Beams - Parent</name>
-  
   <modules>
     <module>deployment</module>
     <module>runtime</module>
   </modules>
-  
+  <scm>
+    <connection>scm:git:git@github.com:quarkiverse/quarkus-pusher-beams.git</connection>
+    <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-pusher-beams.git</developerConnection>
+    <url>https://github.com/quarkiverse/quarkus-pusher-beams</url>
+  </scm>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <maven.compiler.parameters>true</maven.compiler.parameters>
@@ -27,12 +28,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
-    
     <quarkus.version>2.9.1.Final</quarkus.version>
     <pusher.beams.server-sdk.version>1.1.1</pusher.beams.server-sdk.version>
-	
   </properties>
-  
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -55,7 +53,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
   <build>
     <pluginManagement>
       <plugins>
@@ -70,7 +67,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
-    
     <plugins>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -83,7 +79,6 @@
         </configuration>
       </plugin>
     </plugins>
-    
   </build>
   <profiles>
     <profile>
