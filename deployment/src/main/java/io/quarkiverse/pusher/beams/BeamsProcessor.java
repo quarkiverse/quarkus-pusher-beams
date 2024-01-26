@@ -2,8 +2,6 @@ package io.quarkiverse.pusher.beams;
 
 import java.util.function.BooleanSupplier;
 
-import javax.inject.Inject;
-
 import com.pusher.pushnotifications.PublishNotificationResponse;
 import com.pusher.pushnotifications.PushNotificationErrorResponse;
 
@@ -17,6 +15,7 @@ import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
+import jakarta.inject.Inject;
 
 public class BeamsProcessor {
 
