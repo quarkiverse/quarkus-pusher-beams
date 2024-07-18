@@ -2,17 +2,16 @@ package io.quarkiverse.pusher.beams.server.retry;
 
 import java.text.MessageFormat;
 
-import javax.inject.Inject;
-import javax.interceptor.AroundInvoke;
-import javax.interceptor.Interceptor;
-import javax.interceptor.InvocationContext;
-
 import org.jboss.logging.Logger;
 
 import com.pusher.pushnotifications.PusherTooManyRequestsError;
 
 import io.quarkiverse.pusher.beams.config.BeamsConfig;
-import io.quarkus.arc.Priority;
+import jakarta.annotation.Priority;
+import jakarta.inject.Inject;
+import jakarta.interceptor.AroundInvoke;
+import jakarta.interceptor.Interceptor;
+import jakarta.interceptor.InvocationContext;
 
 /**
  * This interceptor is responsible of handling {@link PusherTooManyRequestsError} exception around

@@ -5,13 +5,12 @@ import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-
 import com.pusher.pushnotifications.PushNotifications;
 
 import io.quarkiverse.pusher.beams.server.retry.RateLimited;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 /**
  * This class acts as a proxy to access and use the {@link PushNotifications} object from Pusher
