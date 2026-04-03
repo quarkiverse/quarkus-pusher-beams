@@ -2,8 +2,6 @@ package io.quarkiverse.pusher.beams.server.retry;
 
 import java.lang.reflect.Method;
 
-import javax.interceptor.InvocationContext;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,6 +17,7 @@ import com.pusher.pushnotifications.PusherTooManyRequestsError;
 
 import io.quarkiverse.pusher.beams.config.BeamsConfig;
 import io.quarkiverse.pusher.beams.config.RateLimitRetryConfig;
+import jakarta.interceptor.InvocationContext;
 
 @ExtendWith(MockitoExtension.class)
 public class RateLimitedInterceptorTest {
